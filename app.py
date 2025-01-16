@@ -8,7 +8,7 @@ import sqlite3
 from datetime import datetime
 from flask import request
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-
+app = Flask(__name__)
 
 def index():
   return render_template('index.html')
